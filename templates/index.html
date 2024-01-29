@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gas Station App</title>
+</head>
+<body>
+    <h1>Fuel Prices</h1>
+    <ul>
+        {% for fuel_type, price in fuel_prices.items() %}
+            <li>{{ fuel_type }}: ${{ price }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
